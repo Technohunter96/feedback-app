@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Packgae JSON added proxy
+V package.json jsem přidal  "proxy":"http://localhost:5000", aby jsem pak při fetching API nemusel psát const response = await fetch("http:/localhost:5000/feedback?_sort=id&_order=desc"), ale stačilo napsat const response = await fetch("/feedback?_sort=id&_order=desc")
+
+
+## Package pro unikátní kód
+import { v4 as uuidv4 } from "uuid"
+
+newFeedback.id = uuidv4() // do newFeedback přidám unikátní id, které jsem nainstaloval přes nmp i uuid a naimportoval výše
+
 ## Available Scripts
 
 In the project directory, you can run:

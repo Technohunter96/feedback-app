@@ -1,3 +1,5 @@
+# To run this app type in terminal: "npm run dev" so you can run client and server concurrently
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
